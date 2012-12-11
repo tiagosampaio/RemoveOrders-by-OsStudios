@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <OsStudios_RemoveOrders>
+            <version>0.1.0.0</version>
+        </OsStudios_RemoveOrders>
+    </modules>
+    <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <sales_order_grid>OsStudios_RemoveOrders_Block_Adminhtml_Sales_Order_Grid</sales_order_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+	<admin>
+        <routers>
+            <osstudios_deleteorder>
+                <use>admin</use>
+                <args>
+                    <module>OsStudios_RemoveOrders</module>
+                    <frontName>removeOrders</frontName>
+                </args>
+            </osstudios_deleteorder>
+        </routers>
+    </admin>
+</config>

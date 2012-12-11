@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>       
+	    <OsStudios_RemoveOrders>
+	        <active>true</active>
+            <codePool>community</codePool>
+	    </OsStudios_RemoveOrders>
+		<depends>
+			<Mage_Sales/>
+			<Mage_Adminhtml/>
+		</depends>
+    </modules>
+</config>
